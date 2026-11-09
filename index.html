@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tamanna Mandal's personal portfolio website.">
+  <title>Tamanna Mandal | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="logo" href="#home">TM<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" type="button">☾ Dark mode</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section-wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">HELLO, I'M</p>
+        <h1>Tamanna <span>Mandal</span></h1>
+        <h2>BTech Student · Aspiring Python Backend Developer</h2>
+        <p class="intro">I enjoy building useful web experiences, learning new technologies, and turning ideas into working projects. I’m currently strengthening my skills in Python, web development and problem-solving.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">Explore my work</a>
+          <a class="button secondary" href="#contact">Contact me</a>
+        </div>
+      </div>
+      <div class="hero-card" aria-label="Portfolio introduction card">
+        <div class="avatar">TM</div>
+        <p class="card-kicker">CURRENT FOCUS</p>
+        <h3>Learn. Build. Improve.</h3>
+        <p>Python · Django · Front-end development</p>
+      </div>
+    </section>
+
+    <section id="about" class="section-wrap about-section">
+      <p class="eyebrow">A LITTLE ABOUT ME</p>
+      <h2 class="section-title">Curious mind, practical builder.</h2>
+      <p class="section-text">I’m a BTech student with an interest in software development. I like learning by creating projects, experimenting with design, and improving my coding step by step. Outside coding, I enjoy singing and content creation.</p>
+    </section>
+
+    <section id="skills" class="section-wrap">
+      <p class="eyebrow">WHAT I WORK WITH</p>
+      <h2 class="section-title">My Skills</h2>
+      <div class="skill-grid">
+        <article class="skill-card"><h3>Programming</h3><p>Python · Java</p></article>
+        <article class="skill-card"><h3>Web</h3><p>HTML · CSS · JavaScript</p></article>
+        <article class="skill-card"><h3>Core concepts</h3><p>OOP · Data Structures · Problem Solving</p></article>
+        <article class="skill-card"><h3>Backend</h3><p>Django · Python fundamentals</p></article>
+      </div>
+    </section>
+
+    <section id="projects" class="section-wrap">
+      <p class="eyebrow">SOME THINGS I'VE BUILT</p>
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-number">01</div>
+          <h3>LIVORA</h3>
+          <p>A web-based interior design consultation and slot-booking platform. The project explores user registration, architect selection and consultation booking.</p>
+          <p class="tag-list">Python · Django · HTML · CSS</p>
+        </article>
+        <article class="project-card">
+          <div class="project-number">02</div>
+          <h3>LUXE Clothing Website</h3>
+          <p>A fashion storefront concept with a clean layout, collection-focused hero section and responsive front-end styling.</p>
+          <p class="tag-list">HTML · CSS · JavaScript</p>
+        </article>
+        <article class="project-card">
+          <div class="project-number">03</div>
+          <h3>Python Banking System</h3>
+          <p>A learning project that uses object-oriented programming concepts to model basic banking operations.</p>
+          <p class="tag-list">Python · OOP</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section-wrap contact-section">
+      <div>
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2 class="section-title">Have an idea or opportunity?</h2>
+        <p class="section-text">Send a message using the form. Replace the sample contact details below with your real details before publishing.</p>
+        <p class="contact-line"><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p class="contact-line"><strong>GitHub:</strong> <a href="https://github.com/your-username" target="_blank" rel="noopener">github.com/your-username</a></p>
+      </div>
+      <form class="contact-form" id="contactForm" novalidate>
+        <label for="visitorName">Your name</label>
+        <input id="visitorName" name="visitorName" type="text" placeholder="Enter your name" required>
+        <label for="visitorEmail">Your email</label>
+        <input id="visitorEmail" name="visitorEmail" type="email" placeholder="Enter your email" required>
+        <label for="visitorMessage">Message</label>
+        <textarea id="visitorMessage" name="visitorMessage" rows="5" placeholder="Write your message..." required></textarea>
+        <button class="button primary" type="submit">Check message</button>
+        <p id="formFeedback" class="form-feedback" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Tamanna Mandal. Built with HTML, CSS & JavaScript.</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
